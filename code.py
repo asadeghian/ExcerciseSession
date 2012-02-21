@@ -9,7 +9,6 @@ def file_fixer(file_name,line):
 	new_file = open(abs_path,'w')
 
 	for line2 in o:
-		print line,line2
 		if line==line2:
 			line2= line2.replace(": N",": M")
 		new_file.write(line2)
